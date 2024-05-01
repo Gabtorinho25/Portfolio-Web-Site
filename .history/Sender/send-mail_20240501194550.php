@@ -23,12 +23,12 @@ try {
 
     // Configurer pour utiliser SMTP
     $mail->isSMTP();
-    $mail->Host = '';   // Définir le serveur SMTP pour l'envoi smtp.gmail.com Pour gmail
+    $mail->Host = 'smtp.gmail.com';   // Définir le serveur SMTP pour l'envoi
     $mail->SMTPAuth   = true; // Activer l'authentification SMTP 
     $mail->Username   = '';   // Nom d'utilisateur SMTP / celui qui va envoyer le mail
     $mail->Password   = ''; // Mot de passe de l'application
     $mail->SMTPSecure = 'ssl';    // Activer le TLS implicite 
-    $mail->Port       = ; //  Port 465 SMTP
+    $mail->Port       = ; // 465  Port SMTP
 
     // Définir l'adresse e-mail de l'expéditeur
     $mail->setFrom('');
