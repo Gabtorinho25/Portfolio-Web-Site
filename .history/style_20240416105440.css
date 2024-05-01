@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbf4;
+  color: white;
+}
+
+
+
+
+header {
+  width: 100%;
+  
+}
+
+
+.logo {
+  width: 200px;
+}
+
+.profil {
+  border-radius:70%;
+  width: 25%;
+}
+.container{
+    padding: 7px 7%;
+}
+
+nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    list-style-type: none;
+    color:#AB7D63;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 27px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.flotte{
+  float: left;
+}
+
+.TextePresentation p{
+  color: #3f3f3f;
+}
+
+h1{
+  color: black;
+}
+
+.italic{font-style: italic;}
+
+#ParaphMe{
+  width: 600px;
+}
+.relative{
+  position: relative;
+
+}
+.pictureofme{
+  
+    width: 100%;
+    z-index: -1;
+     border-radius: 200px;
+     top: 80px;
+    right: 3%;
+   
+}
+.PhotodeMoi{
+  padding-top: 100px;
+    width: 455px;
+    height: 455px;
+}
+
+.TextePresentation{
+  padding-top: 100px;
+position: relative;
+bottom: 350px;
+width: 100%;
+color: aqua;
+padding-left:550px;
+}
+
+.marron{
+  color: #AB7D63;
+}
+
+#accroche{
+  font-size: 70px;
+  color: #000000;
+}
+
+.Présentation{
+  display: inline-block;
+}
+
+
+ /* STYLE POUR HOVER */
+ .hover-3 {
+  --b: 0.1em;   
+  --c:#AB7D63; 
+  
+  color: #0000;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+.hover-3:hover {
+  --_p: 100%;
+  --_s: .3s;
+}
+
+.TextePresentation h3{
+  padding-top: 30px;
+  display: flex;
+  text-align: left;
+  width: 90%;
+  color: #000000c0;
+}
+
+/* ABOUT ME */
+
+#AboutMe{
+  background-color:  #fff8ea;
+  padding: 4% 7%;
+  height: 33%;
+}
+
+.row{
+  display: flex;  /* pour que les divs enfants à l'intérieur soit disposé en ligne quand elles ont assez de place */ 
+  justify-content: space-between; /* pour qu'il est un espace entre les deux divs enfants*/
+  flex-wrap: wrap;
+
+}
+
+#AboutMePicture{
+  width: 100%;
+  border-radius: 50px;
+}
+
+.colonne1 {
+  width: 70%;
+  
+}
+.colonne2{
+width: 30%;
+}
+
+.AboutMeTitre{
+  text-align: left;
+  font-size: 55px;
+  position: relative;
+  bottom: 25px;
+}
+
+h2 {
+  color:#383837d8;
+  padding-left: 40px;
+}
+#softskills,#hardskills,#scolarité {
+  display: inline-flex;
+  justify-content: left;
+  width: 30%;
+  margin-right: 10px;
+  
+}
+
+
+
+.onglet{
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.contenu{
+  position: absolute;
+  opacity: 0;
+}
+
+
+.contenu p{
+  width: 60%;
+  text-align: left;
+  justify-content: center;
+  padding: 5px 0px 0px  35px  ;
+  color: #000000a7;
+}
+
+.contenu h2 {
+  color: #000000;
+  padding: 35px 0px 15px  5px  ;
+  
+}
+
+.contenu h3 {
+  padding: 5px 0px 5px  25px  ;
+  color: #000000ca;
+}
+
+.secu {
+  margin-right: 10%;
+
+}
+.flex{
+  
+  width: 35%;
+  display: flex;
+  align-items: flex-start;
+  
+  flex-wrap: wrap;
+}
+
+/* Apparition du contenu */
+
+.displayed{
+  background-color:#AB7D63
+}
+
+.displayedContenu
+{
+  flex-direction: row;
+  width: 60%;
+animation: fade 1s forwards;
+}
+
+@keyframes fade {
+
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+/* Porfolio */ 
+
+#Portfolio{
+  background-color: #fffbf4;
+  padding: 4% 7%;
+  height: 33%;
+  
+}
+
+.Portfolio_titre{
+  
+  font-size: 55px;
+  text-align: right;
+  font-weight: bold;
+}
+
+
+.slider-1{
+  
+  max-width: 75%;
+  margin: 100px auto;
+  border: 1px solid rgba(152, 145, 145, 0.581);
+  border-radius: 5%;
+   overflow: hidden;/*Tout ce qui dépasse est caché */
+}
+
+.slider-1 .Slide {
+  
+  
+ flex-shrink: 0;
+ width: 100%;
+ flex-wrap: wrap;
+ flex-direction: row;
+
+ font-size: 50px;
+
+}
+.FirstSlide, .SecondSlide, .ThirdSlide {color: #000;}
+
+.textport{
+  background: #000000;
+  text-align: center;
+  color: #d56926;
+}
+
+.projet1{width: 100%;
+border-radius: 20%;}
+
+.slider{ display: flex;
+/* animation: slider-1 10s infinite ease-in-out;} */
+
+
+/* Animation du slider */
+/* 
+   10% par transition, nombre choisi arbitrairement.
+
+   reste divisé par nb de pauses
+   70(%) / 3 = 23.33(%) par pause */
+
+
+@keyframes slider-1 {
+  0%,
+  23.33% {
+    transform: translateX(0);
+  }
+  33.33%,
+  56.66% {
+    transform: translateX(-100%);
+  }
+  66.66%,
+  89.99% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+} 

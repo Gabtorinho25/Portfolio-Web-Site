@@ -1,0 +1,1 @@
+const onglets = document.querySelectorAll('.')
