@@ -31,7 +31,7 @@ try {
     $mail->Port       = 465; // Port SMTP
 
     // Définir l'adresse e-mail de l'expéditeur
-    $mail->setFrom('');
+    $mail->setFrom('portfoliogdsnts@gmail.com');
 
     // Récupérer les données du formulaire
     $name = $_POST["nom"];
@@ -45,7 +45,7 @@ try {
     Vous pouvez le/la joindre par mail: $email ou bien par téléphone au $phone.";
 
     // Ajouter l'adresse e-mail de destination
-    $mail->addAddress(''); // Qui va recevoir le mail
+    $mail->addAddress('portfoliogdsnts@gmail.com'); // Qui va recevoir le mail
     $mail->isHTML(true); // Définir le format de l'e-mail en HTML
     $mail->Subject = 'Contact via site portfolio'; // Définir le sujet de l'e-mail
     $mail->Body    =  $mail_envoye; // Définir le contenu de l'e-mail
