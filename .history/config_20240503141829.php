@@ -1,0 +1,3 @@
+
+
+HOST="smtp.gmail.com"

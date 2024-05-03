@@ -123,7 +123,6 @@
                 <p>OWASP</p>
                 <p>reverse engineering</p>
                 <p>Cisco</p>
-                <p>AWS - Architecture Cloud Computing</p>
                 <p>AZURE – Déploiement de service Cloud</p>
                 <p>Conteneurisation LXC et Docker</p>
                 <p>Windows Server</p>
@@ -139,7 +138,7 @@
                 <p>PHP</p>
                 <p>SQL</p>
                 <p>Node.js</p>
-                
+                <?php dsfsdf ?>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 
 <?php
-$ini = parse_ini_file('../app.ini');
+requireonce;
 
 // Activer le rapport d'erreurs PHP
 error_reporting(E_ALL);
@@ -25,15 +25,15 @@ try {
 
     // Configurer pour utiliser SMTP
     $mail->isSMTP();
-    $mail->Host = $ini['HOST'];   // Définir le serveur SMTP pour l'envoi
+    $mail->Host = HOST;   // Définir le serveur SMTP pour l'envoi smtp.gmail.com Pour gmail
     $mail->SMTPAuth   = true; // Activer l'authentification SMTP 
-    $mail->Username   = $ini['USERNAME'];   // Nom d'utilisateur SMTP / celui qui va envoyer le mail
-    $mail->Password   = $ini['PASSWORD']; // Mot de passe de l'application
+    $mail->Username   = '';   // Nom d'utilisateur SMTP / celui qui va envoyer le mail
+    $mail->Password   = ''; // Mot de passe de l'application
     $mail->SMTPSecure = 'ssl';    // Activer le TLS implicite 
-    $mail->Port       = $ini['PORT']; // Port SMTP
+    $mail->Port       = ; //  Port 465 SMTP
 
     // Définir l'adresse e-mail de l'expéditeur
-    $mail->setFrom($ini['USERNAME']);
+    $mail->setFrom('');
 
     // Récupérer les données du formulaire
     $name = $_POST["nom"];
@@ -47,7 +47,7 @@ try {
     Vous pouvez le/la joindre par mail: $email ou bien par téléphone au $phone.";
 
     // Ajouter l'adresse e-mail de destination
-    $mail->addAddress($ini['USERNAME']); // Qui va recevoir le mail
+    $mail->addAddress(''); // Qui va recevoir le mail
     $mail->isHTML(true); // Définir le format de l'e-mail en HTML
     $mail->Subject = 'Contact via site portfolio'; // Définir le sujet de l'e-mail
     $mail->Body    =  $mail_envoye; // Définir le contenu de l'e-mail
@@ -60,3 +60,4 @@ try {
     echo "Le message n'a pas pu être envoyé. Erreur Mailer: {$mail->ErrorInfo}";
 }
 ?>
+
