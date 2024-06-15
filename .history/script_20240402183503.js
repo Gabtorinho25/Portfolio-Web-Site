@@ -1,8 +1,0 @@
-
-// Animation AboutMe //
-
-
-// On sélectionne tous les onglets
-const onglets = document.querySelectorAll('.onglet'); 
-// On sélectionne tous les contenus
-const contenu = document.querySelectorAll('.contenu');

@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'https://fonts.googleapis.com'; font-src 'https://fonts.gstatic.com'; img-src 'self' data:">
     <title>Portfolio de Gabriel Dos Santos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,11 +22,11 @@
     <header>
       <div class=" relative" id="header">
         <nav class="shadow-bandeau">
-          <a href="http://127.0.0.1:5500/">
+          <a href="https://gdsnts.ovh/">
             <img class="logo white-filter-logo" src="Image/Logo.png" alt="logo"
           /></a>
           <ul>
-            <li><a href="http://127.0.0.1:5500/">Accueil</a></li>
+            <li><a href="https://gdsnts.ovh/">Accueil</a></li>
             <li><a href="#AboutMe">About Me</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="#Contact">Contact</a></li>
@@ -139,7 +140,6 @@
                 <p>PHP</p>
                 <p>SQL</p>
                 <p>Node.js</p>
-                
               </div>
             </div>
           </div>
@@ -243,3 +243,4 @@
     <script src="js\script.js"></script>
   </body>
 </html>
+

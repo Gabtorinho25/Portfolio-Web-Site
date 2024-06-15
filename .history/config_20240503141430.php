@@ -1,1 +1,0 @@
-HOST="smtp.gmail.com"
